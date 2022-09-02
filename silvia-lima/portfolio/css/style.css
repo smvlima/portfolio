@@ -1,6 +1,10 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: url('/images/background.svg');
+    background-size: cover;
+    
 }
 h1 {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
 }
