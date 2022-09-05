@@ -1,4 +1,10 @@
-.App {
+main {
+  width: 80%;
+  margin: 0 auto;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -36,3 +42,4 @@
     transform: rotate(360deg);
   }
 }
+*/

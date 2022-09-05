@@ -4,8 +4,8 @@ import "./nav.css";
 function Nav() {
   return (
     <header>
-      <img src="https://picsum.photos/50/50" alt="principal"></img>
       <nav>
+        <img src="https://picsum.photos/50/50" alt="principal"></img>
         <ul>
           <li>
             <a href="#utilizadores">Utilizadores</a>

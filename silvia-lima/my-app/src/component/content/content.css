@@ -1,0 +1,14 @@
+.content {
+    margin: 15px;
+    border: 1px solid cadetblue;
+    display: flex;
+}
+
+.content[data-variant="image-first"] {
+    flex-direction: row-reverse;
+}
+
+.content[data-theme="dark"]{
+    background-color: black;
+    color: white;
+}

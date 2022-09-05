@@ -2,6 +2,14 @@ import React from "react";
 import "./features.css";
 
 function Features() {
+  const info = [
+    'Pagar com MBWay',
+    'Enviar Dinheiro',
+    'Cartões MB NET',
+    'Pedir Dinheiro',
+    'Dividir Conta',
+  ]
+
     return (
       <div>
         <h2>explore as funcionalidades mb way</h2>
