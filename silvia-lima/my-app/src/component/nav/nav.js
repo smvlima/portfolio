@@ -3,8 +3,8 @@ import "./nav.scss";
 
 function Nav() {
   return (
-    <header>
-      <nav>
+    <header className="nav">
+      <nav >
         <img src="https://picsum.photos/50/50" alt="principal"></img>
         <ul>
           <li>

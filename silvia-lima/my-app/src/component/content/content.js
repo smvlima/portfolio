@@ -1,23 +1,18 @@
 import React from "react";
+
 import "./content.scss";
+import "./mbservices";
 
-function Content(props) {
-
-const {title, description, src, variant, theme} = props;
+function Content({title, description, img, variant, theme}) {
+  // const { title, description, img, variant, theme } = props;
 
   return (
-    <div
-      className="content"
-      data-variant={variant}
-      data-theme={theme}
-    >
-      <div>
-        <h2>{title}</h2>
-        {description && <p>{description}</p>}
+    <div className="content__container" data-variant={variant} data-theme="{theme}"> 
+      <div className="content__text">
+        <h1 className="content__title">{title}</h1>
+        {description && <p className="content__description">{description}</p>}
       </div>
-      {src && (<div>
-        <img src={src} alt="content"></img>
-      </div>)}
+      { img && (<img className="content__image" src={img} alt={title} />)}
     </div>
   );
 }

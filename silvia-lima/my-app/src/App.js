@@ -9,7 +9,9 @@ function App() {
     <main>
     <div>
       <Nav />
+      <section className="herolist">
       <Hero />
+      </section>
       <Features />
       <Content src="https://picsum.photos/200/300" variant="image-first" title="Pagar com MBWay" description="Pagar com MB WAY é fácil, prático e seguro. Descubra os três métodos para Pagar com MB WAY: Em lojas físicas, através de QR Code ou NFC; Em lojas on-line, com o seu número de telemóvel. SAIBA MAIS" />
       <Content theme="dark" src="https://picsum.photos/200/300" title="Pagar com MBWay" description="Pagar com MB WAY é fácil, prático e seguro. Descubra os três métodos para Pagar com MB WAY: Em lojas físicas, através de QR Code ou NFC; Em lojas on-line, com o seu número de telemóvel. SAIBA MAIS" />
