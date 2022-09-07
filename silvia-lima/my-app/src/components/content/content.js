@@ -1,5 +1,5 @@
 import React from "react";
-import { services } from "./mbservices";
+import { services } from "../../mocks/mbservices";
 import "./content.scss";
 
 function Content({title, description, img, variant, theme}) {

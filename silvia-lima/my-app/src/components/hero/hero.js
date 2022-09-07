@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./hero.scss";
-import { heroes } from "./heroes";
+import { heroes } from "../../mocks/heroes";
 
 import { FiCircle } from "react-icons/fi";
 import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";

@@ -6,11 +6,11 @@ function Nav() {
   return (
     <header>
       <div className="nav__container">
-        <img
+        <a className="nav__logo__link" href="/"><img
           className="nav__logo"
           src="https://endpoint-mbway.azureedge.net/wp-content/uploads/2021/02/MBWAYlogoBRANCO.png"
           alt="logo"
-        />
+        /></a>
         <ul className="nav__user">
           <li>
             <a className="nav__link" href="#features">
@@ -25,22 +25,22 @@ function Nav() {
         </ul>
         <ul className="nav__list">
           <li>
-            <a className="nav__link" href="#segurança">
+            <a className="nav__link" href="/security">
               segurança
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#challenge">
+            <a className="nav__link" href="/challenge">
               challenge
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#novidades">
+            <a className="nav__link" href="/news">
               novidades
             </a>
           </li>
           <li>
-            <a className="nav__link" href="#challenge">
+            <a className="nav__link" href="/faqs">
               FAQs
             </a>
           </li>
