@@ -6,6 +6,7 @@ import { featInfo } from "./featuresArray";
 
 function Features() {
   
+
   return (
     <div className="features__container">
       <ul className="features__list">
@@ -13,7 +14,7 @@ function Features() {
           <FiArrowLeftCircle className="features__arrowCircle" />
         </li>
         <li className="features__content">
-          <ul className= "features__contentList" >
+          <ul className="features__content-list">
             {featInfo.map((i) => {
               return (
                 <li key={i.id} className="feature__box">

@@ -69,7 +69,11 @@ function Hero() {
   let box = card[index]; 
   return (
     <div className="hero__container">
-      <FiArrowLeftCircle onClick={() => remove()} className="hero__arrow"/>
+      <button onClick={() => remove()} className="hero__btn">
+        <FiArrowLeftCircle className="hero__arrow" />
+      </button>
+
+
       <div className="hero__card-container">
       {/* {heroes.map((card, cardIndex) => {
         return ( */}
@@ -81,7 +85,10 @@ function Hero() {
         {/* );
       })} */}
       </div>
-      <FiArrowRightCircle onClick={() => add()} className="hero__arrow"/>
+      <button className="hero__btn" onClick={() => add()}>
+        <FiArrowRightCircle className="hero__arrow" />
+      </button>
+
     </div>
   );
 }
