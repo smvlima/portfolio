@@ -1,22 +1,34 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
 import "./App.scss";
-import Nav from './component/nav/nav';
-import Hero from "./component/hero/hero";
-import Features from "./component/features/features";
-import Content from "./component/content/content";
+import Home from "./pages/home/home";
+import Security from "./pages/security/security";
+import Challenge from "./pages/challenge/challenge";
+import News from "./pages/news/news";
+import Faqs from "./pages/faqs/faqs";
+import Nav from "./components/nav/nav";
+// import Hero from "./components/hero/hero";
+// import { heroes } from "./mocks/heroes";
+// import Content from "./components/content/content";
+// import Features from "./components/features/features";
+import Pizza from "./pages/pizza/pizza";
 
 function App() {
   return (
     <main>
-    <div>
-      <Nav />
-      <section className="herolist">
-      <Hero />
-      </section>
-      <Features />
-      <Content src="https://picsum.photos/200/300" variant="image-first" title="Pagar com MBWay" description="Pagar com MB WAY é fácil, prático e seguro. Descubra os três métodos para Pagar com MB WAY: Em lojas físicas, através de QR Code ou NFC; Em lojas on-line, com o seu número de telemóvel. SAIBA MAIS" />
-      <Content theme="dark" src="https://picsum.photos/200/300" title="Pagar com MBWay" description="Pagar com MB WAY é fácil, prático e seguro. Descubra os três métodos para Pagar com MB WAY: Em lojas físicas, através de QR Code ou NFC; Em lojas on-line, com o seu número de telemóvel. SAIBA MAIS" />
-      <Content  title="Pagar com MBWay"  description="Pagar com MB WAY é fácil, prático e seguro. Descubra os três métodos para Pagar com MB WAY: Em lojas físicas, através de QR Code ou NFC; Em lojas on-line, com o seu número de telemóvel. SAIBA MAIS" />
-    </div>
+      <div>
+        <Nav />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/challenge" element={<Challenge />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/faqs" element={<Faqs />} />
+          <Route path="/pizza" element={<Pizza />} />
+        </Routes> 
+        </div>
     </main>
   );
 }

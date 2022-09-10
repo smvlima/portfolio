@@ -1,7 +1,6 @@
 import React from "react";
-
+import { services } from "../../mocks/mbservices";
 import "./content.scss";
-import "./mbservices";
 
 function Content({title, description, img, variant, theme}) {
   // const { title, description, img, variant, theme } = props;

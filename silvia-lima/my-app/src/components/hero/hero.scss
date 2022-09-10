@@ -1,36 +1,44 @@
 .hero__container {
   width: 85%;
+  height: 17rem;
   margin: 0 auto;
   display: flex;
-  padding: 3rem;
+  padding: 2rem;
   justify-content: center;
+  
   
 }
 
 .hero__card-container {
   display: flex;
-
+  
   width: 20%;
   gap: 1rem;
-  border-radius: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
   backdrop-filter: blur(4.9px);
   -webkit-backdrop-filter: blur(4.9px);
+  transition: 500ms;
+  &:hover {
+      background-color: rgba(185, 192, 46, 0.13);
+    }
 }
+
 
 .hero__card {
   position: relative;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 20vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
   background: rgba(234, 243, 103, 0.15);
   cursor: pointer;
-  // display: none;
+  overflow: hidden;
+ 
 }
 
 // .hero__card-hidden {
@@ -60,15 +68,21 @@
 }
 
 .hero__description {
-  text-align: justify;
+  text-align: center;
   font-size: 10px;
   padding: 0 2rem 0 2rem;
+
+}
+
+.hero__btn {
+  border: none;
+  background-color: transparent;
 }
 
 .hero__arrow {
-  width: 15%;
+  width: 90%;
   position: relative;
-  top: 45%;
+  top: 0%;
   margin: 0;
   // padding-top: 7rem;
   font-size: 40px;
@@ -81,3 +95,4 @@
 
   }
 }
+
