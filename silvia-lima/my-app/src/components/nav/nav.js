@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import './nav.scss'
 
@@ -13,36 +14,36 @@ function Nav() {
         /></a>
         <ul className="nav__user">
           <li>
-            <a className="nav__link" href="#features">
+            <Link className="nav__link" to="#features">
               utilizadores
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav__link" href="/pizza">
+            <Link className="nav__link" to="/pizza">
               pizzas
-            </a>
+            </Link>
           </li>
         </ul>
         <ul className="nav__list">
           <li>
-            <a className="nav__link" href="/security">
+            <Link className="nav__link" to="/security">
               segurança
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav__link" href="/challenge">
+            <Link className="nav__link" to="/challenge">
               challenge
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav__link" href="/news">
+            <Link className="nav__link" to="/news">
               novidades
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="nav__link" href="/faqs">
+            <Link className="nav__link" to="/faqs">
               FAQs
-            </a>
+            </Link>
           </li>
           <li>
             <input

@@ -17,7 +17,7 @@ export const Ingredients = [
         id: 3,
         name: 'Azeitonas Pretas',
         image: 'https://images.telepizza.com/vol/pt/images/content/ingredientes/ap.png',
-        quantity: 5,
+        quantity: 0,
         price: 0.35,
     },
     {
