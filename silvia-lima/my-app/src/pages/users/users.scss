@@ -1,22 +1,22 @@
-.faqs{
+.users{
     width: 90%;
     margin: 0 auto;
 }
-.faqs__headline{
+.users__headline{
     color: grey;
 }
-.faqs__loading{
+.users__loading{
     text-align: center;
 }
-.faqs__list{
+.users__list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
-.faqs__article{
+.users__article{
     margin-bottom: 1em;
 }
-.faqs__link{
+.users__link{
     display: block;
     background-color: white;
     box-shadow: 0 0 4px rgba(0, 0, 0, .25);
@@ -29,16 +29,27 @@
         border-color:yellow;
         color: black;
     }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.faqs__name{
+.users__image {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    border-radius: 50%;
+    text-align: center;
+}
+.users__name{
     margin-bottom: 0;
     text-align: justify;
 }
-.faqs__mail{
+.users__mail{
     margin-top: .5em;
     text-align: right;
 }
-.faqs__description{
+.users__description{
     margin-top: .5em;
     text-align: justify;
 }

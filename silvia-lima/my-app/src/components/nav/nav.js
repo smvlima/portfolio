@@ -14,7 +14,7 @@ function Nav() {
         /></a>
         <ul className="nav__user">
           <li>
-            <Link className="nav__link" to="#features">
+            <Link className="nav__link" to="/users">
               utilizadores
             </Link>
           </li>

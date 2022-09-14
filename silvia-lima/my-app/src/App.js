@@ -13,6 +13,7 @@ import Nav from "./components/nav/nav";
 // import Content from "./components/content/content";
 // import Features from "./components/features/features";
 import Pizza from "./pages/pizza/pizza";
+import Users from "./pages/users/users";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/pizza" element={<Pizza />} />
+          <Route path="/users" element={<Users/>} />
         </Routes> 
         </div>
     </main>
