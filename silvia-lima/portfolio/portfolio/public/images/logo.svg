@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150.00002mm"
+   height="150.00002mm"
+   viewBox="0 0 150.00002 150.00002"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="desenho.svg"
+   inkscape:export-filename="logo.svg"
+   inkscape:export-xdpi="93.738091"
+   inkscape:export-ydpi="93.738091"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.75098906"
+     inkscape:cx="-41.278897"
+     inkscape:cy="529.30198"
+     inkscape:window-width="2400"
+     inkscape:window-height="1271"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="5.6666665"
+       markerHeight="5.6666665"
+       viewBox="0 0 5.6666667 5.6666667"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="Dot1"
+         sodipodi:nodetypes="sssss" />
+    </marker>
+    <rect
+       x="288.95227"
+       y="434.09421"
+       width="420.77844"
+       height="113.18407"
+       id="rect1738" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1680">
+      <rect
+         style="fill:#000000;stroke:#000000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1682"
+         width="71.519577"
+         height="233.5836"
+         x="32.412811"
+         y="-271.98575"
+         transform="scale(1,-1)" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.000001,-69.999998)">
+    <ellipse
+       style="fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.9;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Dot)"
+       id="path111"
+       cx="102.88613"
+       cy="141.80605"
+       clip-path="url(#clipPath1680)"
+       transform="translate(-2.6419279,5.2057547)"
+       rx="66.587189"
+       ry="65.882561" />
+    <text
+       xml:space="preserve"
+       transform="matrix(1.1437587,0,0,1.1437587,-258.23583,-395.26792)"
+       id="text1736"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:74.6667px;font-family:'Freehand521 BT';-inkscape-font-specification:'Freehand521 BT';white-space:pre;shape-inside:url(#rect1738);fill:#000000;stroke:#000000;stroke-width:0;stroke-dasharray:none;stroke-opacity:1"><tspan
+         x="288.95312"
+         y="500.15628"
+         id="tspan1533">S</tspan></text>
+    <ellipse
+       style="fill:#000000;stroke:#000000;stroke-width:4.06542;stroke-dasharray:none;stroke-opacity:1"
+       id="path1852"
+       cx="143.39146"
+       cy="-148.14771"
+       rx="3.7381067"
+       ry="3.5619502"
+       transform="scale(1,-1)" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.9;stroke-dasharray:none"
+       id="path1276"
+       cx="101.24598"
+       cy="81.14212"
+       rx="3.9635229"
+       ry="3.990036" />
+    <ellipse
+       style="fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:6.9;stroke-dasharray:none"
+       id="path1276-4"
+       cx="101.08167"
+       cy="212.87563"
+       rx="3.9635229"
+       ry="3.990036" />
+  </g>
+</svg>
