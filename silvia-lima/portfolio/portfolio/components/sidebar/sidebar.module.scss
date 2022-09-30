@@ -1,0 +1,64 @@
+@import "../../styles/variables.scss";
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25vh;
+    height: 100%;
+    background-color: $background;
+    box-shadow: 0 2px 5px $blue-darker;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 20vh;
+        height: 20vh;
+        mask: url('../../public/images/logo.svg');
+        background-color: $orange-heavy;
+        mask-size: contain;
+        cursor: pointer;
+        transition: 250ms;
+        &:hover {
+            background-color: $pink-soft;
+        }
+    }
+
+    .navigation {
+        list-style-type: none;
+        padding-left: 0;
+
+        .item {
+            color: $orange-heavy;
+            padding: 1em 1em;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 250ms;
+            &:hover {
+                color: $pink-soft;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .social {
+        list-style-type: none;
+        display: inline-flex;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+        transition: 250ms;
+        a {
+            &:hover {
+                color: $pink-soft;
+            }
+        }
+
+    }
+}
