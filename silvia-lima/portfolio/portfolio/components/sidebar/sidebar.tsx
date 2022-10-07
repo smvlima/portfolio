@@ -1,11 +1,15 @@
 import Link from "next/link";
 import { NextPage } from "next";
+import { useState } from "react";
 import styles from "../sidebar/sidebar.module.scss";
-import { AiFillGitlab , AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
+import Theme_button from '../theme_button/theme_button';
 
 interface Props {}
 
 const Sidebar: NextPage<Props> = ({}) => {
+
+
   return (
     <div className={styles.sidebar}>
       <Link href="/">
@@ -42,16 +46,23 @@ const Sidebar: NextPage<Props> = ({}) => {
       </ul>
       <ul className={styles.social}>
         <li>
-        <Link href="https://gitlab.com/smvlima">
-            <a target="_blank"><AiFillGitlab/></a>
+          <Link href="https://gitlab.com/smvlima">
+            <a target="_blank">
+              <AiFillGitlab />
+            </a>
           </Link>
         </li>
         <li>
-        <Link href="https://www.linkedin.com/in/smvlima/">
-            <a><AiFillLinkedin/></a>
+          <Link href="https://www.linkedin.com/in/smvlima/">
+            <a target="_blank">
+              <AiFillLinkedin />
+            </a>
           </Link>
         </li>
       </ul>
+      <div className={styles.toggle}>
+        <Theme_button />
+      </div>
     </div>
   );
 };

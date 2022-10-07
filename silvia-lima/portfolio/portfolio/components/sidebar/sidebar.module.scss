@@ -7,11 +7,12 @@
     width: 25vh;
     height: 100%;
     background-color: $background;
-    box-shadow: 0 2px 5px $blue-darker;
+    box-shadow: 0 2px 5px $title-shadow;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
+
     .logo {
         display: block;
         margin: 0 auto;
@@ -19,12 +20,13 @@
         width: 20vh;
         height: 20vh;
         mask: url('../../public/images/logo.svg');
-        background-color: $orange-heavy;
-        mask-size: contain;
+        mask-size: cover;
+        background-color: $paragraph;
         cursor: pointer;
-        transition: 250ms;
+        transition: 250ms ease-out;
+
         &:hover {
-            background-color: $pink-soft;
+            background-color: $hover;
         }
     }
 
@@ -33,13 +35,14 @@
         padding-left: 0;
 
         .item {
-            color: $orange-heavy;
+            color: $paragraph;
             padding: 1em 1em;
             text-align: center;
             text-transform: uppercase;
-            transition: 250ms;
+            transition: 250ms ease-out;
+
             &:hover {
-                color: $pink-soft;
+                color: $hover;
                 text-decoration: underline;
             }
         }
@@ -53,12 +56,21 @@
         justify-content: center;
         gap: 1rem;
         font-size: 2rem;
-        transition: 250ms;
+        color: $paragraph;
+
         a {
+            transition: 250ms ease-out;
+
             &:hover {
-                color: $pink-soft;
+                color: $hover;
             }
         }
 
     }
+
+    .toggle {
+        margin: 0 auto;
+
+    }
+
 }
