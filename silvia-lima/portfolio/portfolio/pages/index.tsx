@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
+import Frontpage from '../components/front_page/frontpage'
 
 const Home: NextPage = () => {
   return (
@@ -12,9 +13,9 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          
-        </div>
+        <Frontpage />
+        <Frontpage />
+        <Frontpage />
       </main>
 
     </div>

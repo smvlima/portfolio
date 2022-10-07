@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Sidebar />
-      <Component {...pageProps} />
+      <Component {... pageProps} />
     </>
   );
 }
