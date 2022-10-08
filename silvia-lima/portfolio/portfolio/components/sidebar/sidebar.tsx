@@ -2,8 +2,7 @@ import Link from "next/link";
 import { NextPage } from "next";
 import styles from "../sidebar/sidebar.module.scss";
 import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
-import Theme_button from '../theme_button/theme_button';
-
+import Theme_button from '../theme-button/theme-button';
 interface Props {}
 
 const Sidebar: NextPage<Props> = ({}) => {

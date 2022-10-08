@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import styles from "../front_page/frontpage.module.scss";
+import styles from "../front-page/frontpage.module.scss";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import Link from "next/link";
 

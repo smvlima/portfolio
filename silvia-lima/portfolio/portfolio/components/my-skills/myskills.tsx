@@ -1,5 +1,5 @@
 import { NextPage } from 'next';
-import styles from '../my_skills/myskills.module.scss'
+import styles from '../my-skills/myskills.module.scss'
 
 interface Props {}
 

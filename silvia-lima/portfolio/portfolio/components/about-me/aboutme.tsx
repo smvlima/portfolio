@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import styles from "../about_me/aboutme.module.scss";
+import styles from "../about-me/aboutme.module.scss";
 
 interface Props {}
 

@@ -1,7 +1,7 @@
 import { NextPage } from 'next'
 import { useState } from 'react';
-import styles from "../theme_button/theme_button.module.scss";
-import LightTheme from '../theme_button/light_theme';
+import styles from "../theme-button/theme-button.module.scss";
+import LightTheme from './light-theme';
 
 interface Props {}
 
