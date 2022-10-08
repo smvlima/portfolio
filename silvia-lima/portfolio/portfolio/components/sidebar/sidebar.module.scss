@@ -1,13 +1,11 @@
-@import "../../styles/variables.scss";
-
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 25vh;
     height: 100%;
-    background-color: $background;
-    box-shadow: 0 2px 5px $title-shadow;
+    background-color: var(--background);
+    box-shadow: 0 2px 5px var(--title-shadow);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,12 +19,12 @@
         height: 20vh;
         mask: url('../../public/images/logo.svg');
         mask-size: cover;
-        background-color: $paragraph;
+        background-color: var(--paragraph);
         cursor: pointer;
         transition: 250ms ease-out;
 
         &:hover {
-            background-color: $hover;
+            background-color: var(--hover);
         }
     }
 
@@ -35,14 +33,14 @@
         padding-left: 0;
 
         .item {
-            color: $paragraph;
+            color: var(--paragraph);
             padding: 1em 1em;
             text-align: center;
             text-transform: uppercase;
             transition: 250ms ease-out;
 
             &:hover {
-                color: $hover;
+                color: var(--hover);
                 text-decoration: underline;
             }
         }
@@ -56,13 +54,13 @@
         justify-content: center;
         gap: 1rem;
         font-size: 2rem;
-        color: $paragraph;
+        color: var(--paragraph);
 
         a {
             transition: 250ms ease-out;
 
             &:hover {
-                color: $hover;
+                color: var(--hover);
             }
         }
 

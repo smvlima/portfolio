@@ -1,0 +1,26 @@
+.aboutme {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        color: var(--title);
+    }
+
+    .text {
+        text-align: justify;
+        color: var(--paragraph);
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .image {
+        aspect-ratio: 1;
+        background-image: url('../../public/images/pic.jpg');
+        background-size: cover;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+}

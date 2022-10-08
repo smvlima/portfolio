@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { NextPage } from "next";
-import { useState } from "react";
 import styles from "../sidebar/sidebar.module.scss";
 import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
 import Theme_button from '../theme_button/theme_button';
@@ -19,29 +18,19 @@ const Sidebar: NextPage<Props> = ({}) => {
       </Link>
       <ul className={styles.navigation}>
         <li className={styles.item}>
-          <Link href="/">
-            <a>About Me</a>
-          </Link>
+            <a href='/#aboutme'>About Me</a>
         </li>
         <li className={styles.item}>
-          <Link href="/">
-            <a>My Skills</a>
-          </Link>
+            <a href="/#myskills">My Skills</a>
         </li>
         <li className={styles.item}>
-          <Link href="/">
-            <a>Portfolio</a>
-          </Link>
+            <a href="/#portfolio">Portfolio</a>
         </li>
         <li className={styles.item}>
-          <Link href="/">
-            <a>Blog</a>
-          </Link>
+            <a href="/#blog">Blog</a>
         </li>
         <li className={styles.item}>
-          <Link href="/">
-            <a>Contact Me</a>
-          </Link>
+            <a href="/#contactme">Contact Me</a>
         </li>
       </ul>
       <ul className={styles.social}>
