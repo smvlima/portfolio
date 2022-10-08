@@ -1,9 +1,30 @@
 import { NextPage } from 'next'
+import { useState } from 'react';
 import styles from "../theme_button/theme_button.module.scss";
+import LightTheme from '../theme_button/light_theme';
 
 interface Props {}
 
 const Theme_button: NextPage<Props> = ({}) => {
+//info em localStorage
+  function loadLightMode() {
+    if (typeof localStorage === "undefined") {
+      return false;
+    }
+    const value = localStorage.getItem("lightMode");
+    return value === null ? false : JSON.parse(value);
+  }
+  
+//definir inicialmente o modo light = false
+  const [lightMode, setLightMode] = useState(loadLightMode);
+
+  const changeTheme = () => {
+    localStorage.setItem("lightMode", JSON.stringify(!lightMode));
+    setLightMode(!lightMode);
+  };
+
+
+
 
 
   
@@ -11,10 +32,11 @@ const Theme_button: NextPage<Props> = ({}) => {
     <>
       <form action="#">
         <label className={styles.switch}>
-          <input type="checkbox" />
+          <input type="checkbox" id="theme-checkbox" onChange={changeTheme}/>
           <span className={styles.slider}></span>
         </label>
       </form>
+      {lightMode && <LightTheme />}
     </>
   );
 };

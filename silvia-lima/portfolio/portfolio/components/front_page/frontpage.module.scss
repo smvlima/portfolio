@@ -1,4 +1,3 @@
-@import "../../styles/variables.scss";
 
 @keyframes jump {
     from { transform: translate(-0.1rem, 0.3rem); }
@@ -14,7 +13,7 @@
     align-items: center;
     justify-content: center;
     .subtitle {
-        color: $paragraph;
+        color: var(--paragraph);
         margin: 0;
         font-size: 1.5rem;
         font-weight: 200;
@@ -22,26 +21,26 @@
 
     .title {
         font-size: 8rem;
-        color: $title;
-        text-shadow: 2px 2px $title-shadow;
+        color: var(--title);
+        text-shadow: 2px 2px var(--title-shadow);
         margin: 0;
     }
 
     .description {
-        color: $paragraph;
+        color: var(--paragraph);
         font-size: 2rem;
     }
     .call_to_action {
         padding: 1rem;
         background-color: transparent;
-        border: 1px solid $title-shadow;
-        box-shadow: 2px 2px 2px $title-shadow ;
+        border: 1px solid var(--title-shadow);
+        box-shadow: 2px 2px 2px var(--title-shadow) ;
         width: fit-content;
-        color: $paragraph;
+        color: var(--paragraph);
         cursor: pointer;
         transition: 250ms;
         &:hover {
-            background-color: $title-shadow;
+            background-color: var(--title-shadow);
         }
     }
     .scroll {
@@ -54,13 +53,14 @@
         right: 1rem;
         font-weight: 100;
         font-size: 1rem;
+        transform: translateX(4.5rem);
         .scroll__text {
-            color: $paragraph;
+            color: var(--paragraph);
             writing-mode: vertical-rl;
         }
 
         .scroll__arrow {
-            color: $paragraph;
+            color: var(--paragraph);
             animation: jump 500ms alternate-reverse infinite;
 
         }

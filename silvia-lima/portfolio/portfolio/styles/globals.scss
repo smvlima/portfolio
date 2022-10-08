@@ -1,4 +1,13 @@
-@import "./variables.scss";
+:root {
+  --background: #002023 ;
+  --title-shadow: #013b42;
+  --title: #016e79;
+  --border: #68382d;
+  --paragraph: #f5ead2;
+  --hover: #f59981;
+  --basic-texts: #f57237 ;
+}
+
 
 html,
 body {
@@ -6,9 +15,12 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: $background;
+    background-color: var(--background);
 }
-
+main {
+  margin-left: 12.5vh;
+  padding: 2rem;
+}
 a {
   color: inherit;
   text-decoration: none;

@@ -2,6 +2,11 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import Frontpage from '../components/front_page/frontpage'
+import Aboutme from '../components/about_me/aboutme'
+import Myskills from '../components/my_skills/myskills'
+import Portfolio from '../components/portfolio/portfolio'
+import Blog from '../components/blog/blog'
+import Contactme from '../components/contact-me/contactme'
 
 const Home: NextPage = () => {
   return (
@@ -14,8 +19,12 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <Frontpage />
-        <Frontpage />
-        <Frontpage />
+        <Aboutme />
+        <Myskills />
+        <Portfolio />
+        <Blog />
+        <Contactme/>
+
       </main>
 
     </div>

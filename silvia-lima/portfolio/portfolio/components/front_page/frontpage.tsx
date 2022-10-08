@@ -12,9 +12,7 @@ const Frontpage: NextPage<Props> = ({}) => {
       <h1 className={styles.title}>I'm Sílvia Lima</h1>
       <p className={styles.description}>Full-Stack Web Developer</p>
       <div className={styles.call_to_action}>     
-      <Link href="/">
-        <a>Contact Me!</a>
-      </Link>
+        <a href="#contactme">Contact Me!</a>
       </div>
       <div className={styles.scroll}>
         <span className={styles.scroll__text}>scroll down</span>

@@ -1,12 +1,14 @@
-import { NextPage } from 'next'
+import { NextPage } from 'next';
+import styles from '../my_skills/myskills.module.scss'
 
 interface Props {}
 
 const Myskills: NextPage<Props> = ({}) => {
-  return (
-  <div></div>
-  
-  
-  );};
+  return(
+    <div id='myskills'>
+      <p className={styles.test}>this is my skills component</p>
+    </div>
+    );
+  };
 
 export default Myskills
