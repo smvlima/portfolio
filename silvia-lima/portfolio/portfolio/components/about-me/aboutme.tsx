@@ -6,8 +6,8 @@ interface Props {}
 const Aboutme: NextPage<Props> = ({}) => {
   return (
     <div className={styles.aboutme} id="aboutme">
+      <h2 className={styles.title}>About me </h2>
       <div className={styles.text}>
-        <h2 className={styles.title}>About me </h2>
         <p>
           Hi, my name is Sílvia and I'm currently studying to become a
           Full-Stack Web Developer.
