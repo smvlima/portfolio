@@ -2,9 +2,46 @@
     .title {
         color: var(--title);
     }
-    .badge {
-        width: 9em;
-        height: 16em;
+
+    .programs {
+        .subtitle {
+            font-size: 1.5rem;
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--basic-texts);
+        }
+
+        .programs__grid {
+            
+            margin: 0 auto;
+            width: fit-content;
+            display: grid;
+            // grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            justify-content: space-between;
+
+            .box {
+                max-width: 25vh;
+
+                .box__link {
+                    aspect-ratio: 1/1;
+
+                    .box__image {
+                        overflow: hidden;
+                        border-radius: 50%;
+                        //box-shadow: inset 1rem 1rem 1rem var(--paragraph);
+
+                        img {
+                            display: block;
+                            transform: scale(1.15);
+                            max-width: 100%;
+                            margin: auto auto;
+                        }
+                    }
+
+                }
+            }
+        }
     }
 
 }

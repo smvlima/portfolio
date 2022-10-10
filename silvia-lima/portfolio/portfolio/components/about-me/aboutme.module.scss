@@ -1,12 +1,14 @@
 .aboutme {
     display: inline-grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    column-gap: 3rem;
     align-items: center;
     justify-content: center;
 
     .title {
         color: var(--title);
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 
     .text {
