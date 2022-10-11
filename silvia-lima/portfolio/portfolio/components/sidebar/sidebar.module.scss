@@ -57,7 +57,7 @@
         color: var(--paragraph);
 
         a {
-            transition: 250ms ease-out;
+            transition: ease-in-out;
 
             &:hover {
                 color: var(--hover);

@@ -12,6 +12,7 @@ function LightTheme() {
 	        --paragraph: #013b42;
 	        --hover: #f57237;
 	        --basic-texts: #013b42 ;
+          --box-hover: #f59237d5
         }
       `}
     </style>

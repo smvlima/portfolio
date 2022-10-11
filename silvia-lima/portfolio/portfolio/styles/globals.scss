@@ -6,6 +6,7 @@
   --paragraph: #f5ead2;
   --hover: #f59981;
   --basic-texts: #f57237 ;
+  --box-hover: #002023d5;
 }
 
 
@@ -16,6 +17,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     background-color: var(--background);
+    transition: 250ms;
 }
 main {
   margin-left: 12.5vh;
@@ -28,6 +30,7 @@ a {
 
 * {
   box-sizing: border-box;
+  transition: 250ms;
 }
 
 
@@ -35,6 +38,7 @@ h2 {
   text-align: center;
   padding: 2rem;
   font-size: 2rem;
+  color: var(--title);
 }
 
 // @media (prefers-color-scheme: dark) {
