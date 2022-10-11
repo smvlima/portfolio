@@ -46,7 +46,7 @@ const Myskills: NextPage<Props> = ({}) => {
             {WORKSHOPS.map((item) => (
               <div className={styles.box} key={item.id}>
                 <Link href={item.link} className={styles.box}>
-                  <a target="_blank" className={styles.box__link}>
+                  <a target="_blank" title={item.title} className={styles.box__link}>
                     <div className={styles.box__image}>
                       <img src={item.image} alt={item.name}></img>
                     </div>
