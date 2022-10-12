@@ -1,3 +1,47 @@
-.test {
-    color: var(--paragraph);
+.blog {
+    padding: -2rem 0;
+
+    .title {}
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.1em;
+
+        .box {
+            aspect-ratio: 1/1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            .box__link {
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background-color: var(--title-shadow);
+                transition: 250ms;
+
+                &:hover {
+                    background-color: var(--box-hover);
+
+                    .box__title {
+                        font-size: 5.1rem;
+                    }
+                }
+
+                .box__title {
+                    font-size: 5rem;
+                    align-self: center;
+                    color: var(--paragraph);
+                    font-weight: 600;
+                    text-align: center;
+                }
+
+            }
+        }
+
+    }
+
 }
