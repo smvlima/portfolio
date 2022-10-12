@@ -1,6 +1,5 @@
 import { NextPage } from "next";
 import Link from "next/link";
-import { isMapIterator } from "util/types";
 import { PORTFOLIO } from "../../mocks/portfolio";
 import styles from "../portfolio/portfolio.module.scss";
 
