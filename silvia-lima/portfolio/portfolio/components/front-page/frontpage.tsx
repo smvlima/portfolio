@@ -7,7 +7,7 @@ interface Props {}
 
 const Frontpage: NextPage<Props> = ({}) => {
   return (
-    <div className={styles.aboutme}>
+    <div className={styles.frontpage}>
       <h2 className={styles.subtitle}>Hello World,</h2>
       <h1 className={styles.title}>I'm Sílvia Lima</h1>
       <p className={styles.description}>Full-Stack Web Developer</p>
