@@ -41,6 +41,24 @@ h2 {
   color: var(--title);
 }
 
+.swiper-wrapper {
+  padding: 2rem 0;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  color: var(--paragraph); 
+}
+.swiper-button-next {
+ 
+}
+.swiper-pagination-bullet {
+  background-color: var(--paragraph) !important;
+}
+.swiper {
+  width: 80%;
+}
+
+
 // @media (prefers-color-scheme: dark) {
 //   html {
 //     color-scheme: dark;
