@@ -1,8 +1,100 @@
 .details {
-    background-color: var(--background);
+    z-index: 20;
+    background-color: var(--box-hover);
     width: 80%;
-    height: 80%;
+    height: 100vh;
     position: fixed;
-    top: 70%;
-    right: 5%;
+    top: 0;
+    right: 0;
+
+    .container {
+        width: 95%;
+        height: 95%;
+        margin: 2.5%;
+        background-color: var(--title-shadow);
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+
+        .title {
+            font-weight: 800;
+            font-size: 3rem;
+            color: var(--title);
+            text-align: center;
+        }
+
+        .description {
+            display: inline-flex;
+            justify-content: space-between;
+
+            .image {
+                display: block;
+                width: 65%;
+                height: auto;
+                aspect-ratio: 4/3;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                max-width: 30%;
+
+                .text {
+                    color: var(--paragraph);
+                }
+
+                .social {
+                    list-style-type: none;
+                    display: inline-flex;
+                    padding-left: 0;
+                    width: 100%;
+                    justify-content: center;
+                    gap: 1rem;
+                    font-size: 2rem;
+                    color: var(--paragraph);
+
+                    a {
+                        transition: ease-in-out;
+
+                        &:hover {
+                            color: var(--hover);
+                        }
+                    }
+
+                }
+
+                .box {
+                    display: flex;
+                    justify-content: center;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+
+                    .languages {
+                        padding: .35rem .8rem;
+                        color: var(--paragraph);
+                        background-color: var(--background);
+                        width: fit-content;
+                        height: 2rem;
+                        border-radius: 1.25rem;
+                        transition: 250ms;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .close {
+        position: fixed;
+        cursor: pointer;
+        top: 1.5rem;
+        right: 1.5rem;
+        font-size: 2rem;
+        color: var(--paragraph);
+    }
 }

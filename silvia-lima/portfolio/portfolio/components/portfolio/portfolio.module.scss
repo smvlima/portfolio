@@ -14,7 +14,8 @@
             background-repeat: no-repeat;
             background-position: center;
 
-            .box__link {
+            .box__item {
+                border: none;
                 padding: 1rem;
                 position: relative;
                 display: flex;
@@ -43,6 +44,7 @@
                         .languages:nth-child(3) {
                             transition-delay: 500ms;
                             transform: translateY(0);
+                            
                         }
                         .languages:nth-child(4) {
                             transition-delay: 750ms;
@@ -67,16 +69,19 @@
                     display: inline-flex;
                     gap: 1rem;
                     overflow: hidden;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
 
                     .languages {
                         padding: .5rem .8rem;
                         color: var(--paragraph);
                         background-color: var(--background);
                         width: fit-content;
-                        height: 2.5rem;
+                        height: 2rem;
                         border-radius: 1.25rem;
-                        transform: translateY(2.5rem);
+                        transform: translateY(5rem);
                         transition: 250ms;
+                        
                     }
                 }
             }

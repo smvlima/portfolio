@@ -19,10 +19,7 @@ body {
     background-color: var(--background);
     transition: 250ms;
 }
-main {
-  margin-left: 12.5vh;
-  padding: 2rem;
-}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -32,7 +29,18 @@ a {
   box-sizing: border-box;
   transition: 250ms;
 }
-
+nav {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+} 
+main {
+  padding: 2rem;
+  width: 80%;
+  position: absolute;
+  top:0;
+  right:0;
+}
 
 h2 {
   text-align: center;
@@ -42,7 +50,7 @@ h2 {
 }
 
 .swiper-wrapper {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -54,10 +62,6 @@ h2 {
 .swiper-pagination-bullet {
   background-color: var(--paragraph) !important;
 }
-.swiper {
-  width: 80%;
-}
-
 
 // @media (prefers-color-scheme: dark) {
 //   html {
@@ -68,3 +72,26 @@ h2 {
 //     background: $background;
 //   }
 // }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  position: fixed;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--title);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover);
+
+}
