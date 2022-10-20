@@ -5,14 +5,15 @@ function LightTheme() {
     <style jsx global>
       {`
         :root {
-          --background: #f5ead2 ;
-          --title: #f59237;
-          --title-shadow: #f57237;
-	        --border: #68382d;
-	        --paragraph: #013b42;
-	        --hover: #f57237;
-	        --basic-texts: #013b42 ;
-          --box-hover: #f59237d5
+          --background: #eaddd5 ;
+          --title: #d36953;
+          --title-shadow: #ddc1b5;
+          --box-hover: rgba(170, 187, 204, 0.45);
+	        --border: #912522;
+	        --paragraph: #004545;
+	        --hover: #3d746f;
+	        --basic-texts: #2F7872;
+          
         }
       `}
     </style>

@@ -1,11 +1,10 @@
-import { NextPage } from 'next'
 import { useState } from 'react';
 import styles from "../theme-button/theme-button.module.scss";
 import LightTheme from './light-theme';
 
 interface Props {}
 
-const Theme_button: NextPage<Props> = ({}) => {
+const Theme_button= () => {
 //info em localStorage
   function loadLightMode() {
     if (typeof localStorage === "undefined") {

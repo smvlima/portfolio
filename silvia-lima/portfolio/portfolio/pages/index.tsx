@@ -13,19 +13,25 @@ import Myskills from "../components/my-skills/myskills";
 import Portfolio from "../components/portfolio/portfolio";
 import Blog from "../components/blog/blog";
 import Contactme from "../components/contact-me/contactme";
-import Details from "../components/details/details";
+import Project from "../components/project/project";
 import { useState } from "react";
+import Post from "../components/post/post";
 
 
 const Home: NextPage = () => {
 const [projectId, setProjectId] = useState(0);
-
+const [postId, setPostId] = useState(0);
 const onSelectProject = (id: number) => {
   setProjectId(id);
 }
-
+const onSelectPost = (id: number) => {
+  setPostId(id);
+}
 const onResetProject = (zero: number) => {
   setProjectId(zero);
+}
+const onResetPost = (zero: number) => {
+  setPostId(zero);
 }
 
   return (
@@ -40,10 +46,11 @@ const onResetProject = (zero: number) => {
         <Frontpage />
         <Aboutme />
         <Myskills />
-        <Portfolio selectProject={onSelectProject} zeroProject={projectId} />
-        <Blog />
+        <Portfolio selectProject={onSelectProject}/>
+        <Blog selectPost={onSelectPost}/>
         <Contactme />
-        <Details project={projectId} resetProject={onResetProject}/>
+        <Project project={projectId} resetProject={onResetProject}/>
+        <Post post={postId} resetPost={onResetPost} selectPost={onSelectPost}/>
 
       
       

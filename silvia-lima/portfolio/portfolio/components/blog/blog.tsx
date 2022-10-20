@@ -1,11 +1,14 @@
-import { NextPage } from 'next';
-import Link from 'next/link';
-import { BLOG } from '../../mocks/blog';
-import styles from '../blog/blog.module.scss';
+import { BLOG } from "../../mocks/blog";
+import styles from "../blog/blog.module.scss";
 
-interface Props {}
+interface Props {
+  selectPost(id: number): void;
+}
 
-const Blog: NextPage<Props> = ({}) => {
+const Blog = ({ selectPost }: Props) => {
+  function sendId(id: number) {
+    selectPost(id);
+  }
   return (
     <div className={styles.blog} id="blog">
       <h2 className={styles.title}>Blog</h2>
@@ -16,19 +19,19 @@ const Blog: NextPage<Props> = ({}) => {
             style={{ backgroundImage: `url(${item.image})` }}
             key={item.id}
           >
-            <Link href={item.link}>
-              <a
-                target="_blank"
-                className={styles.box__link}
-              >
-                <span className={styles.box__title}>{item.title}</span>
-              </a>
-            </Link>
+            <button
+              className={styles.box__item}
+              onClick={() => {
+                sendId(item.id);
+              }}
+            >
+              <span className={styles.box__title}>{item.title}</span>
+            </button>
           </div>
         ))}
       </div>
     </div>
-    );
-  };
+  );
+};
 
 export default Blog;

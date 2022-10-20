@@ -1,5 +1,5 @@
 .aboutme {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 3rem;
     align-items: center;
@@ -25,4 +25,17 @@
         max-width: 100%;
         border-radius: 50%;
     }
+    
 }
+@media screen and (max-width: 768){
+    .aboutme {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 1024){
+    .aboutme {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+

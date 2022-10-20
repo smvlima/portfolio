@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Props {}
 
-const Frontpage: NextPage<Props> = ({}) => {
+const Frontpage= () => {
   return (
     <div className={styles.frontpage}>
       <h2 className={styles.subtitle}>Hello World,</h2>

@@ -6,15 +6,14 @@ import styles from "../styles/Home.module.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
-      <nav>
+    <div className={styles.container}>
+      <nav className={styles.nav}>
         <Sidebar />
       </nav>
-
-      <main>
+      <main className={styles.main}>
         <Component {...pageProps} />
       </main>
-    </>
+    </div>
   );
 }
 

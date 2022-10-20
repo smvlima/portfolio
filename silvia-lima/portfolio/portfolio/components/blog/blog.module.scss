@@ -1,12 +1,15 @@
 .blog {
     padding: -2rem 0;
+    transition: 250ms;
 
     .title {}
 
     .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 0.1em;
+        justify-content: center;
 
         .box {
             aspect-ratio: 1/1;
@@ -14,7 +17,8 @@
             background-repeat: no-repeat;
             background-position: center;
 
-            .box__link {
+            .box__item {
+                border: none;
                 padding: 1rem;
                 display: flex;
                 justify-content: center;
@@ -22,17 +26,20 @@
                 height: 100%;
                 background-color: var(--title-shadow);
                 transition: 250ms;
+                box-sizing: border-box;
 
                 &:hover {
                     background-color: var(--box-hover);
+                    transition: 250ms;
+
 
                     .box__title {
-                        font-size: 5.1rem;
+                        font-size: 4.2rem;
                     }
                 }
 
                 .box__title {
-                    font-size: 5rem;
+                    font-size: 4rem;
                     align-self: center;
                     color: var(--paragraph);
                     font-weight: 600;
