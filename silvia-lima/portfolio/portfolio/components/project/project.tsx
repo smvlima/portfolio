@@ -1,24 +1,34 @@
-import styles from "../details/details.module.scss";
+import styles from "../project/project.module.scss";
 import { FiX } from "react-icons/fi";
-import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiFillPlayCircle } from "react-icons/ai";
 import Link from "next/link";
 import { PORTFOLIO } from "../../mocks/portfolio";
+import { useEffect } from "react";
 
 interface Props {
   project: number;
   resetProject(zero: number): void;
 }
 
-const Details = ({ project }: Props, { resetProject }: Props) => {
+const Project = ({ project , resetProject }: Props) => {
   function sendId(zero: number) {
     resetProject(zero);
   }
 
   const selectedProject = PORTFOLIO.find((element) => element.id === project);
 
-  if (project !== 0) {
+  useEffect(()=>{
+    if (selectedProject) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  },[selectedProject])
+
+  if (selectedProject) {
+
     return (
-      <div className={styles.details}>
+      <div className={styles.project}>
         <span
           className={styles.close}
           onClick={() => {
@@ -48,14 +58,14 @@ const Details = ({ project }: Props, { resetProject }: Props) => {
                 <li>
                   <Link href={selectedProject?.link.code}>
                     <a target="_blank">
-                      <AiFillGitlab />
+                      <AiFillGithub />
                     </a>
                   </Link>
                 </li>
                 <li>
                   <Link href={selectedProject?.link.online}>
                     <a target="_blank">
-                      <AiFillLinkedin />
+                      <AiFillPlayCircle />
                     </a>
                   </Link>
                 </li>
@@ -66,8 +76,9 @@ const Details = ({ project }: Props, { resetProject }: Props) => {
       </div>
     );
   } else {
+
     return <></>;
   }
 };
 
-export default Details;
+export default Project;

@@ -1,13 +1,13 @@
 import { PORTFOLIO } from "../../mocks/portfolio";
 import styles from "../portfolio/portfolio.module.scss";
 
+
 interface Props {
   selectProject(id:number):void;
-  zeroProject:number;
 }
 
 
-const Portfolio = ({selectProject}:Props, {zeroProject}:Props) => {
+const Portfolio = ({selectProject}:Props) => {
 
   function sendId(id:number) {
     selectProject(id);

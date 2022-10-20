@@ -3,7 +3,7 @@ import styles from "../contact-me/contactme.module.scss";
 
 interface Props {}
 
-const Contactme: NextPage<Props> = ({}) => {
+const Contactme= () => {
   return (
     <div className={styles.contactme} id="contactme">
       <h2 className={styles.title}>Contact me!</h2>

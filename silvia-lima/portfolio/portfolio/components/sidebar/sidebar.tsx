@@ -1,35 +1,31 @@
 import Link from "next/link";
-import { NextPage } from "next";
 import styles from "../sidebar/sidebar.module.scss";
-import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
-import Theme_button from '../theme-button/theme-button';
-interface Props {}
+import { AiFillGitlab, AiFillLinkedin, AiOutlineMenu } from "react-icons/ai";
+import Theme_button from "../theme-button/theme-button";
 
-const Sidebar: NextPage<Props> = ({}) => {
-
-
-  return (
+const Sidebar = () => {
+  return (<>
     <div className={styles.sidebar}>
       <Link href="/">
-        <div>
+        <div className={styles.img}>
           <a className={styles.logo}></a>
         </div>
       </Link>
       <ul className={styles.navigation}>
         <li className={styles.item}>
-            <a href='/#aboutme'>About Me</a>
+          <a href="/#aboutme">About Me</a>
         </li>
         <li className={styles.item}>
-            <a href="/#myskills">My Skills</a>
+          <a href="/#myskills">My Skills</a>
         </li>
         <li className={styles.item}>
-            <a href="/#portfolio">Portfolio</a>
+          <a href="/#portfolio">Portfolio</a>
         </li>
         <li className={styles.item}>
-            <a href="/#blog">Blog</a>
+          <a href="/#blog">Blog</a>
         </li>
         <li className={styles.item}>
-            <a href="/#contactme">Contact Me</a>
+          <a href="/#contactme">Contact Me</a>
         </li>
       </ul>
       <ul className={styles.social}>
@@ -52,6 +48,10 @@ const Sidebar: NextPage<Props> = ({}) => {
         <Theme_button />
       </div>
     </div>
+    <button className={styles.cta}>
+        <AiOutlineMenu />
+      </button>
+    </>
   );
 };
 

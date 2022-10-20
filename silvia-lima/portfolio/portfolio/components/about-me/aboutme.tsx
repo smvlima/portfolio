@@ -1,9 +1,6 @@
-import { NextPage } from "next";
 import styles from "../about-me/aboutme.module.scss";
 
-interface Props {}
-
-const Aboutme: NextPage<Props> = ({}) => {
+const Aboutme = () => {
   return (
     <div className={styles.aboutme} id="aboutme">
       <h2 className={styles.title}>About me </h2>
