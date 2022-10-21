@@ -8,11 +8,16 @@
             flex-direction: row;
             gap: 2rem;
             align-items: center;
+            @media screen and (max-width: 1024px){
+                flex-direction: column-reverse;
+            }
             .text {
                 text-align: justify;
                 color: var(--paragraph);
                 flex-basis: 2;
-                order: 0;
+                @media screen and (max-width: 1200px){
+                        flex-basis: 1;               
+                }
             }
         
             .image {
@@ -24,27 +29,12 @@
                 border-radius: 50%;
                 flex-basis: 1;
                 order: 1;
-            }
-        }
-    
-        @media screen and (max-width: 1024px){
-            .content {
-                flex-direction: column-reverse;
-                .image {
-                    width: 70%;
-                }
-                .text {
-                    max-width: 60%;
+                @media screen and (max-width:1024px) {
+                    max-width: 200px;
+                    
                 }
             }
-        
-        }
-        @media screen and (max-width: 1200px){
-            .text {
-                flex-basis: 1;
-            }
-        
-        }
+        }        
     
     
 }

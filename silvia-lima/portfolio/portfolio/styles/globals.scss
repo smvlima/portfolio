@@ -52,7 +52,9 @@ h2 {
 ::-webkit-scrollbar {
   width: 10px;
   position: fixed;
-  
+  @media screen and (max-width:1024px) {
+    display: none;
+  }
 }
 
 /* Track */
@@ -71,16 +73,4 @@ h2 {
   background: var(--hover);
   
 
-}
-
-@media screen and (max-width: 768){
-  .aboutme {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-  }
-}
-@media screen and (max-width: 1024){
-  .aboutme {
-      grid-template-columns: repeat(2, 1fr);
-  }
 }

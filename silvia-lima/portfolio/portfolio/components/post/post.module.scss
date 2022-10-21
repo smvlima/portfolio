@@ -7,6 +7,9 @@
     top: 0;
     right: 0;
     transition: 250ms;
+    @media screen and (max-width:1024px) {
+        width: 100%;
+    }
 
     .container {
         width: 95%;

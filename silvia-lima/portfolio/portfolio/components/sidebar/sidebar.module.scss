@@ -1,17 +1,15 @@
 
 
 .sidebar {
-
-    padding: 1rem 0;
+    padding: 2rem 0;
     height: 100%;
     background-color: var(--background);
     box-shadow: 0 2px 5px var(--title-shadow);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
     transition: 250ms;
-
     .img {
         padding: 1rem;
         width: 100%;
@@ -41,7 +39,7 @@
 
         .item {
             color: var(--paragraph);
-            padding: 1em 1em;
+            padding: .5em 1em;
             text-align: center;
             text-transform: uppercase;
             transition: 250ms ease-out;
@@ -52,6 +50,7 @@
                 text-decoration: underline;
             }
         }
+
     }
 
     .social {
@@ -73,30 +72,11 @@
 
             }
         }
-
     }
 
     .toggle {
         margin: 0 auto;
 
-    }
+    }  
 
-    
-
-  
 }
-.cta {
-    visibility: hidden;
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    font-size: 3rem;
-    border: none;
-    background-color: transparent;
-    color: var(--paragraph);
-}
-@media screen and (max-width: 768px){
-    .cta {
-       visibility: visible;
-    }
-    }
