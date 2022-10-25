@@ -72,20 +72,23 @@ const Myskills = () => {
               slidesPerView="auto"
               loop={true}
               pagination={{ clickable: true }}
+              navigation={true}
               breakpoints={{
                 320: {
                   slidesPerView: 1,
                   spaceBetween: 30,
+                  
                 },
                 480: {
                   slidesPerView: 2,
                   spaceBetween: 5,
+                  navigation: true,
                 },
                 768: {
                   slidesPerView: 2,
                   spaceBetween: 20,
+                  navigation: false,
                   loop: false,
-                  pagination: false,
                 },
                 1024: {
                   slidesPerView: 3,
