@@ -1,0 +1,82 @@
+
+
+.sidebar {
+    padding: 2rem 0;
+    height: 100%;
+    background-color: var(--background);
+    box-shadow: 0 2px 5px var(--title-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    transition: 250ms;
+    .img {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+
+        .logo {
+            display: block;
+           margin: 0 auto;
+            width: 12vw;
+            height: 12vw;
+            mask-image: url('../../public/images/logo.svg');
+            mask-size: cover;
+            background-color: var(--paragraph);
+            cursor: pointer;
+            transition: 250ms ease-out;
+    
+            &:hover {
+                background-color: var(--hover);
+            }
+        }
+    }
+    
+
+    .navigation {
+        list-style-type: none;
+        padding-left: 0;
+
+        .item {
+            color: var(--paragraph);
+            padding: .5em 1em;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 250ms ease-out;
+
+            &:hover {
+                transition: 250ms;
+                color: var(--hover);
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+    .social {
+        list-style-type: none;
+        display: inline-flex;
+        padding-left: 0;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 2rem;
+        color: var(--paragraph);
+
+        a {
+            transition: ease-in-out;
+
+            &:hover {
+                color: var(--hover);
+                transition: 250ms;
+
+            }
+        }
+    }
+
+    .toggle {
+        margin: 0 auto;
+
+    }  
+
+}
