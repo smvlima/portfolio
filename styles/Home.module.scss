@@ -30,16 +30,20 @@
         height: 100vh;
     }
 }
-
 .container[data-amount=false] {
-    overflow: hidden;
     .nav {
         display: block;
+    }
+    .main {
+        display: none;
     }
 }
 .container[data-amount=true] {
     .nav {
         display: none;
+    }
+    .main {
+        display: block;
     }
 }
 }

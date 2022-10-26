@@ -7,6 +7,9 @@ import { menuEnabledAtom } from "../../atoms/menu/atoms";
 
 const Sidebar = () => {
   const [info, setInfo] = useRecoilState(menuEnabledAtom);
+  function sentInfo() {
+    setInfo(!info);
+  }
   
   return (
     <>
@@ -14,34 +17,34 @@ const Sidebar = () => {
           <Link
             href="/#top">
             <div className={styles.img}>
-              <a onClick={()=> setInfo(true)} className={styles.logo}></a>
+              <a onClick={()=> sentInfo()} className={styles.logo}></a>
             </div>
           </Link>
         <ul className={styles.navigation}>
           <li className={styles.item}>
           <Link href="/#aboutme">
-            <a onClick={()=> setInfo(true)}>About Me</a>
+            <a onClick={()=> sentInfo()}>About Me</a>
             </Link>
           </li>
 
           <li className={styles.item}>
           <Link href="/#myskills">
-            <a onClick={()=> setInfo(true)}>My Skills</a>
+            <a onClick={()=> sentInfo()}>My Skills</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#portfolio">
-            <a onClick={()=> setInfo(true)}>Portfolio</a>
+            <a onClick={()=> sentInfo()}>Portfolio</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#blog">
-            <a onClick={()=> setInfo(true)}>Blog</a>
+            <a onClick={()=> sentInfo()}>Blog</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#contactme">
-            <a onClick={()=> setInfo(true)}>Contact Me</a>
+            <a onClick={()=> sentInfo()}>Contact Me</a>
             </Link>
           </li>
         </ul>

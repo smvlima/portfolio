@@ -38,7 +38,6 @@ const Menu = () => {
       >
         <FiX />
       </button>
-      ;
     </>
   )}
 };
