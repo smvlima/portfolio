@@ -2,46 +2,46 @@ import Link from "next/link";
 import styles from "../sidebar/sidebar.module.scss";
 import { AiFillGitlab, AiFillLinkedin } from "react-icons/ai";
 import Theme_button from "../theme-button/theme-button";
-import { useResetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 import { menuEnabledAtom } from "../../atoms/menu/atoms";
 
 const Sidebar = () => {
-  const sendInfo = useResetRecoilState(menuEnabledAtom);
+  const [info, setInfo] = useRecoilState(menuEnabledAtom);
   
   return (
     <>
       <div className={styles.sidebar} style={{}}>
           <Link
-            href="/">
+            href="/#top">
             <div className={styles.img}>
-              <a className={styles.logo}></a>
+              <a onClick={()=> setInfo(true)} className={styles.logo}></a>
             </div>
           </Link>
         <ul className={styles.navigation}>
           <li className={styles.item}>
           <Link href="/#aboutme">
-            <a onClick={()=> {sendInfo}}>About Me</a>
+            <a onClick={()=> setInfo(true)}>About Me</a>
             </Link>
           </li>
 
           <li className={styles.item}>
           <Link href="/#myskills">
-            <a>My Skills</a>
+            <a onClick={()=> setInfo(true)}>My Skills</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#portfolio">
-            <a>Portfolio</a>
+            <a onClick={()=> setInfo(true)}>Portfolio</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#blog">
-            <a>Blog</a>
+            <a onClick={()=> setInfo(true)}>Blog</a>
             </Link>
           </li>
           <li className={styles.item}>
           <Link href="/#contactme">
-            <a>Contact Me</a>
+            <a onClick={()=> setInfo(true)}>Contact Me</a>
             </Link>
           </li>
         </ul>

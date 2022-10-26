@@ -6,7 +6,7 @@ const Frontpage = () => {
 
   return (
     <>
-      <div className={styles.frontpage}>
+      <div className={styles.frontpage} id="top">
         <h2 className={styles.subtitle}>Hello World,</h2>
         <h1 className={styles.title}>I&#39;m Sílvia Lima</h1>
         <p className={styles.description}>Full-Stack Web Developer</p>
