@@ -33,6 +33,10 @@
             display: inline-flex;
           //  justify-content: space-between;
             gap: 1rem;
+            @media screen and (max-width:481px) {
+                display: flex;
+                flex-direction: column;
+            }
 
             .image {
                 display: block;

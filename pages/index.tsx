@@ -56,7 +56,6 @@ const Home: NextPage = () => {
       <div className={styles.container} data-amount={`${showOrHide}`}>          
         <nav className={styles.nav}>
           <Sidebar/>
-          <Menu/>
         </nav>
         <main className={styles.main}>
           <Frontpage />
@@ -72,7 +71,6 @@ const Home: NextPage = () => {
             selectPost={onSelectPost}
           />
           <Menu/>
-          
         </main>
       </div>
     </div>

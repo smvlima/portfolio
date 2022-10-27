@@ -14,7 +14,7 @@ const Menu = () => {
   if (visible === true) {
     return (
       <>
-        <button
+        <button type="submit"
           className={styles.cta}
           onClick={() => {
             showOrHideMenu();
@@ -30,6 +30,7 @@ const Menu = () => {
     return (
     <>
       <button
+      type="submit"
         className={styles.close}
         onClick={() => {
           showOrHideMenu();
