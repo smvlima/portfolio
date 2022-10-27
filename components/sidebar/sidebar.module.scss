@@ -10,6 +10,9 @@
     justify-content: space-around;
     gap: 1rem;
     transition: 250ms;
+    @media screen and (max-width:480px) {
+        justify-content: center;
+    }
     .img {
         padding: 1rem;
         width: 100%;
@@ -49,6 +52,14 @@
                 color: var(--hover);
                 text-decoration: underline;
             }
+
+            @media screen and (max-width:480px) {
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width:1024px) {
+                box-shadow: 1px 1px 1px var(--title-shadow);
+            }
+    
         }
 
     }
@@ -71,6 +82,9 @@
                 transition: 250ms;
 
             }
+        }
+        @media screen and (max-width:480px) {
+            margin:0;
         }
     }
 
